@@ -206,6 +206,15 @@ export const PROJECTS: IProjects[] = [
     tagline: 'Invest in of a new dimension of modern recreation',
     link: '',
     description: ''
+  },
+  {
+    id: 20,
+    category: 'Tilda',
+    image: '/images/Photolab.webp',
+    title: 'Photolab',
+    tagline: 'Become a Catalyst for Change in the World',
+    link: 'http://project12143711.tilda.ws',
+    description: ''
   }
 ]
 
