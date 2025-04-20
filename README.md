@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 💼 Developer Portfolio — Blove Studio
 
-## Getting Started
+**My personal developer portfolio showcasing real-world freelance and personal projects, with live previews and brief descriptions.**
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
+- ✅ Project cards with filtering by type/tech
+- ✅ Live preview links to production sites
+- ✅ Clean responsive layout with animations
+- ✅ Modern UI with smooth UX
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
+- **React** + **Next.js**
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion**
+- **Shadcn/UI**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## 🌐 Live Demo
+🔗 [https://blove-studio.vercel.app](https://blove-studio.vercel.app)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📖 About This Project
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This portfolio was created to showcase the projects I've completed as a solo developer.  
+Its main purpose is to demonstrate my experience across various types of development and my expertise with different technologies.
 
-## Deploy on Vercel
+On the site, you’ll find everything from simple landing pages and online stores to full-featured applications with complex business logic.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+> ⚠️ **Note:** Some projects may not include live preview links, as they are no longer active or relevant for the original clients.  
+If needed, feel free to contact me — I’ll be happy to provide full layout previews or visual demos of any specific project.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🧩 Status
+
+✅ Actively maintained — new projects are added regularly
