@@ -248,11 +248,11 @@ export const REVIEWS: IReviews[] = [
   },
   {
     id: 4,
-    name: 'Anna V.',
-    location: 'Portugal, Lisbon',
+    name: 'Maetreya N.',
+    location: 'Sweden, Stockholm',
     rating: '5.0',
     review:
-      'Excellent experience - expertise, speed, quality and communication! Highly recommend! Happy to work together more!',
+      'David Grikurov did an OUTSTANDING job on my website development project. His attention to detail and professionalism are top-notch, while his quick responsiveness and cooperative nature made the whole process a breeze. Highly recommend working with him! 🙌',
     platform: 'Fiverr'
   },
   {
@@ -294,6 +294,15 @@ export const REVIEWS: IReviews[] = [
     rating: '5.0',
     review:
       "I was very pleased with David's work. It was efficient and high quality. I will certainly use him again in the future.",
+    platform: 'Fiverr'
+  },
+  {
+    id: 10,
+    name: 'Anna V.',
+    location: 'Portugal, Lisbon',
+    rating: '5.0',
+    review:
+      'Excellent experience - expertise, speed, quality and communication! Highly recommend! Happy to work together more!',
     platform: 'Fiverr'
   }
 ]
