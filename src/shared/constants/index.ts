@@ -1,39 +1,8 @@
-import {
-  AboutUsIcon,
-  ContactIcon,
-  HomeIcon,
-  ProjectsIcon,
-  ReviewsIcon
-} from '@/shared/icons/icons'
-import { LayoutList, ThumbsUp } from 'lucide-react'
 import { IconBrandFiverr, IconBrandUpwork } from '@tabler/icons-react'
-import React from 'react'
+import { LayoutList, ThumbsUp } from 'lucide-react'
 
-interface IProjects {
-  id: number
-  category: string
-  image: string
-  title: string
-  tagline: string
-  link: string
-  description: string
-}
-
-interface IReviews {
-  id: number
-  name: string
-  location: string
-  rating: string
-  review: string
-  platform: string
-}
-
-export interface INavItems {
-  id: string
-  href: string
-  label: string
-  Icon: () => React.JSX.Element
-}
+import { AboutUsIcon, HomeIcon, ProjectsIcon } from '@/shared/icons/icons'
+import { INavItems, IProjects, IReviews } from '@/types'
 
 export const PROJECTS: IProjects[] = [
   {
@@ -69,7 +38,7 @@ export const PROJECTS: IProjects[] = [
     image: '/images/FROSTFIT.webp',
     title: 'Frostfit',
     tagline: 'Boost your gym performance with innovative palm cooling device',
-    link: 'http://project9977529.tilda.ws',
+    link: '',
     description: ''
   },
   {
@@ -332,45 +301,12 @@ export const NAV_ITEMS: INavItems[] = [
     label: 'Reviews',
     Icon: AboutUsIcon
   },
-  {
-    id: 'contact',
-    href: '/contact',
-    label: 'Contact us',
-    Icon: ContactIcon
-  }
-]
-
-export const SIDEBAR_NAV_ITEMS = [
-  {
-    id: 'home',
-    href: '/main',
-    label: 'Home',
-    Icon: HomeIcon
-  },
-  {
-    id: 'projects',
-    href: '/projects',
-    label: 'Projects',
-    Icon: ProjectsIcon
-  },
   // {
-  //   id: 'about',
-  //   href: '/about',
-  //   label: 'About Us',
-  //   Icon: AboutUsIcon
-  // },
-  {
-    id: 'reviews',
-    href: '/reviews',
-    label: 'Our Reviews',
-    Icon: ReviewsIcon
-  },
-  {
-    id: 'contact',
-    href: '/contact',
-    label: 'Contact Us',
-    Icon: ContactIcon
-  }
+  //   id: 'contact',
+  //   href: '/contact',
+  //   label: 'Contact us',
+  //   Icon: ContactIcon
+  // }
 ]
 
 export const ACHIEVEMENTS_DATA = [

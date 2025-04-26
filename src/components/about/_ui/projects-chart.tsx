@@ -1,67 +1,67 @@
 'use client'
 
 import * as React from 'react'
+import { Label, Pie, PieChart, Sector } from 'recharts'
+import { PieSectorDataItem } from 'recharts/types/polar/Pie'
 
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
-  CardTitle,
+  CardTitle
 } from '@/components/ui/card'
+import {
+  ChartContainer,
+  ChartTooltip,
+  ChartTooltipContent
+} from '@/components/ui/chart'
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
-  SelectValue,
+  SelectValue
 } from '@/components/ui/select'
-import {
-  ChartContainer,
-  ChartTooltip,
-  ChartTooltipContent,
-} from '@/components/ui/chart'
-import { Label, Pie, PieChart, Sector } from 'recharts'
-import { PieSectorDataItem } from 'recharts/types/polar/Pie'
 
 const desktopData = [
   { month: 'january', desktop: 186, fill: 'var(--color-january)' },
   { month: 'february', desktop: 305, fill: 'var(--color-february)' },
   { month: 'march', desktop: 237, fill: 'var(--color-march)' },
   { month: 'april', desktop: 173, fill: 'var(--color-april)' },
-  { month: 'may', desktop: 209, fill: 'var(--color-may)' },
+  { month: 'may', desktop: 209, fill: 'var(--color-may)' }
 ]
 
 const chartConfig = {
   projects: {
-    label: 'Projects',
+    label: 'Projects'
   },
   desktop: {
-    label: 'Desktop',
+    label: 'Desktop'
   },
   mobile: {
-    label: 'Mobile',
+    label: 'Mobile'
   },
   january: {
     label: 'January',
-    color: 'hsl(var(--chart-1))',
+    color: 'hsl(var(--chart-1))'
   },
   february: {
     label: 'February',
-    color: 'hsl(var(--chart-2))',
+    color: 'hsl(var(--chart-2))'
   },
   march: {
     label: 'March',
-    color: 'hsl(var(--chart-3))',
+    color: 'hsl(var(--chart-3))'
   },
   april: {
     label: 'April',
-    color: 'hsl(var(--chart-4))',
+    color: 'hsl(var(--chart-4))'
   },
   may: {
     label: 'May',
-    color: 'hsl(var(--chart-5))',
-  },
+    color: 'hsl(var(--chart-5))'
+  }
 }
 
 function ChartStyle(props: {
@@ -88,7 +88,7 @@ export const ProjectsChart: React.FC<IProps> = () => {
 
   const activeIndex = React.useMemo(
     () => desktopData.findIndex((item) => item.month === activeMonth),
-    [activeMonth],
+    [activeMonth]
   )
   const months = React.useMemo(() => desktopData.map((item) => item.month), [])
 
@@ -131,7 +131,7 @@ export const ProjectsChart: React.FC<IProps> = () => {
                     <span
                       className='flex h-3 w-3 shrink-0 rounded-sm'
                       style={{
-                        backgroundColor: `var(--color-${key})`,
+                        backgroundColor: `var(--color-${key})`
                       }}
                     />
                     {config?.label}

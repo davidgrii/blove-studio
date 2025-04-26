@@ -1,5 +1,6 @@
-import { Skeleton } from '@/components/ui/skeleton'
 import React from 'react'
+
+import { Skeleton } from '@/components/ui/skeleton'
 
 interface IProps {
   className?: string

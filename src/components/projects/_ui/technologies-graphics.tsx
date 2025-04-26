@@ -1,6 +1,7 @@
 import React from 'react'
-import { Card } from '@/components/ui/card'
 import { ACHIEVEMENTS_DATA } from 'src/shared/constants'
+
+import { Card } from '@/components/ui/card'
 
 interface IProps {
   className?: string

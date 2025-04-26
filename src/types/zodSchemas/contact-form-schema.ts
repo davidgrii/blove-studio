@@ -16,6 +16,6 @@ export const contactFormSchema = z.object({
   message: z.string().optional(),
 
   agreeToTerms: z.boolean().refine((value) => value, {
-    message: 'You must accept the terms',
-  }),
+    message: 'You must accept the terms'
+  })
 })

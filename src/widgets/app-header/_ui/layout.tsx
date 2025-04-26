@@ -1,9 +1,11 @@
 import React from 'react'
-import { cn } from '@/components/ui/utils'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+
 import { Button } from '@/components/ui/button'
-import { MenuIcon } from '@/shared/icons/icons'
 import { DialogTitle } from '@/components/ui/dialog'
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import { cn } from '@/components/ui/utils'
+
+import { MenuIcon } from '@/shared/icons/icons'
 
 interface IProps {
   logo: React.ReactNode

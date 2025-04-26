@@ -1,8 +1,9 @@
 import React from 'react'
 
-import { BgcGradients, Container } from '@/components'
 import { ProjectsList } from '@/components/projects/_ui/projects-list'
 import { ProjectsSidebar } from '@/components/projects/_ui/projects-sidebar'
+
+import { BgcGradients, Container } from '@/components'
 
 export default function ProjectsPage() {
   return (

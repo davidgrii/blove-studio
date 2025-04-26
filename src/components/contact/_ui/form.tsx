@@ -1,15 +1,18 @@
 'use client'
 
+import { zodResolver } from '@hookform/resolvers/zod'
 import React from 'react'
 import { Controller, SubmitHandler, useForm } from 'react-hook-form'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { EmailIcon, NameIcon, PhoneNumberIcon } from '@/shared/icons/icons'
+
+import { FormErrors } from '@/components/contact/_ui/form-errors'
+import { TermsCheckbox } from '@/components/contact/_ui/terms-checkbox'
 import { Button } from '@/components/ui/button'
-import { contactFormSchema } from '@/types/zodSchemas'
 import { Spinner } from '@/components/ui/spinner'
 import { cn } from '@/components/ui/utils'
-import { TermsCheckbox } from '@/components/contact/_ui/terms-checkbox'
-import { FormErrors } from '@/components/contact/_ui/form-errors'
+
+import { contactFormSchema } from '@/types/zodSchemas'
+
+import { EmailIcon, NameIcon, PhoneNumberIcon } from '@/shared/icons/icons'
 
 type IForm = {
   name: string

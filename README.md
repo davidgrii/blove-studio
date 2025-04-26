@@ -5,6 +5,7 @@
 ---
 
 ## 🚀 Features
+
 - ✅ Project cards with filtering by type/tech
 - ✅ Live preview links to production sites
 - ✅ Clean responsive layout with animations
@@ -13,6 +14,7 @@
 ---
 
 ## 🛠️ Tech Stack
+
 - **React** + **Next.js**
 - **TypeScript**
 - **Tailwind CSS**
@@ -22,6 +24,7 @@
 ---
 
 ## 🌐 Live Demo
+
 🔗 [https://blove-studio.vercel.app](https://blove-studio.vercel.app)
 
 ---
@@ -34,7 +37,7 @@ Its main purpose is to demonstrate my experience across various types of develop
 On the site, you’ll find everything from simple landing pages and online stores to full-featured applications with complex business logic.
 
 > ⚠️ **Note:** Some projects may not include live preview links, as they are no longer active or relevant for the original clients.  
-If needed, feel free to contact me — I’ll be happy to provide full layout previews or visual demos of any specific project.
+> If needed, feel free to contact me — I’ll be happy to provide full layout previews or visual demos of any specific project.
 
 ## 🧩 Status
 

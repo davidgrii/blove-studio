@@ -1,8 +1,10 @@
-import React from 'react'
 import type { Metadata } from 'next'
 import { Manrope } from 'next/font/google'
-import './globals.css'
+import React from 'react'
+
 import { cn } from '@/components/ui/utils'
+
+import './globals.css'
 
 const manrope = Manrope({
   weight: ['200', '300', '400', '500', '600', '700', '800'],

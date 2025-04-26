@@ -1,11 +1,13 @@
-import React from 'react'
+import { IconUsers } from '@tabler/icons-react'
 import Image from 'next/image'
-import { BgcGradients, Container } from '@/components'
+import React from 'react'
+
 import { Faqs } from '@/components/about/_ui/faqs'
 import { Button } from '@/components/ui/button'
-import { cn } from '@/components/ui/utils'
 import { Card } from '@/components/ui/card'
-import { IconUsers } from '@tabler/icons-react'
+import { cn } from '@/components/ui/utils'
+
+import { BgcGradients, Container } from '@/components'
 
 export default function AboutPage() {
   const faqs = [

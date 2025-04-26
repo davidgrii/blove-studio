@@ -1,10 +1,11 @@
 'use client'
 
+import { useRouter } from 'next/navigation'
+import React from 'react'
 import { FAVORITE_PROJECTS } from 'src/shared/constants'
+
 import { Project } from '@/components/projects/_ui/project'
 import { Button } from '@/components/ui/button'
-import React from 'react'
-import { useRouter } from 'next/navigation'
 
 interface IProps {
   className?: string

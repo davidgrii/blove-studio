@@ -1,10 +1,11 @@
 'use client'
 
-import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import React from 'react'
+
 import { cn } from '@/components/ui/utils'
-import { INavItems } from 'src/shared/constants'
+import { INavItems } from '@/types'
 
 interface IProps {
   navItems: INavItems[]
@@ -17,7 +18,7 @@ export const NavBar: React.FC<IProps> = ({ navItems, className }) => {
   return (
     <nav className={cn(className, 'flex items-start gap-6 text-sm flex-col')}>
       <div className='flex items-center text-xl'>
-        <ul className='flex gap-7 text-[16px]'>
+        <ul className='flex gap-7 text-[1rem]'>
           {navItems.map(({ id, label, href }) => (
             <li key={id}>
               <Link

@@ -1,10 +1,11 @@
 'use client'
 
-import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { cn } from '@/components/ui/utils'
+import React from 'react'
 import { INavItems } from 'src/shared/constants'
+
+import { cn } from '@/components/ui/utils'
 
 interface IProps {
   navItems: INavItems[]

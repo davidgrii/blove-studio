@@ -1,15 +1,12 @@
 'use client'
 
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
-import {
-  CargoBoltIcon,
-  CoinsAppIcon,
-  TinseleIcon
-} from '@/shared/icons/icons'
-import { useRouter } from 'next/navigation'
+import { Button } from '@/components/ui/button'
+
+import { CargoBoltIcon, CoinsAppIcon, TinseleIcon } from '@/shared/icons/icons'
 
 interface IProps {
   className?: string

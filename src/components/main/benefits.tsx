@@ -1,18 +1,20 @@
-import { Card } from '@/components/ui/card'
 import {
   IconCode,
   IconExternalLink,
   IconHeartHandshake,
   IconListDetails
 } from '@tabler/icons-react'
+import Link from 'next/link'
+import React from 'react'
+
+import { Card } from '@/components/ui/card'
+
 import {
   JavaScriptIcon,
   NextJSIcon,
   ReactIcon,
   WordPressIcon
 } from '@/shared/icons/icons'
-import Link from 'next/link'
-import React from 'react'
 
 interface IProps {
   className?: string

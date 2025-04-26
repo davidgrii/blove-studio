@@ -1,6 +1,7 @@
 import React from 'react'
-import { cn } from '@/components/ui/utils'
+
 import { Checkbox } from '@/components/ui/checkbox'
+import { cn } from '@/components/ui/utils'
 
 interface IProps {
   checked: boolean
@@ -11,7 +12,7 @@ interface IProps {
 export const TermsCheckbox: React.FC<IProps> = ({
   checked,
   onCheckedChange,
-  className,
+  className
 }) => {
   return (
     <div className={cn(className, 'items-top flex space-x-2')}>

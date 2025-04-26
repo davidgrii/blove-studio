@@ -1,4 +1,6 @@
-import { BgcGradients, Container } from '@/components'
+import { Separator } from '@radix-ui/react-select'
+
+import { Breadcrumbs } from '@/components/projects/_ui/breadcrumbs'
 import {
   Card,
   CardContent,
@@ -6,10 +8,10 @@ import {
   CardHeader,
   CardTitle
 } from '@/components/ui/card'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { Separator } from '@radix-ui/react-select'
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { Breadcrumbs } from '@/components/projects/_ui/breadcrumbs'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+
+import { BgcGradients, Container } from '@/components'
 
 export default function FullProjectPage() {
   return (

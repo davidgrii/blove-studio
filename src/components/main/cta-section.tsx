@@ -1,9 +1,10 @@
 'use client'
 
 import { ExternalLink } from 'lucide-react'
-import React from 'react'
-import { Button } from '@/components/ui/button'
 import { useRouter } from 'next/navigation'
+import React from 'react'
+
+import { Button } from '@/components/ui/button'
 
 interface IProps {
   className?: string

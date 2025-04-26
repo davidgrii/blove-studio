@@ -1,9 +1,11 @@
 'use client'
 
 import React from 'react'
-import { cn } from '@/components/ui/utils'
-import { AchievementsCards } from '@/components/projects/_ui/technologies-graphics'
+
 import { Sorted } from '@/components/projects/_ui/sorted'
+import { AchievementsCards } from '@/components/projects/_ui/technologies-graphics'
+import { cn } from '@/components/ui/utils'
+
 import { useFilterStore } from '@/shared/store/filter.store'
 
 interface IProps {

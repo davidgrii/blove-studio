@@ -1,15 +1,16 @@
 'use client'
 
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import React from 'react'
+
 import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
-  BreadcrumbSeparator,
+  BreadcrumbSeparator
 } from '@/components/ui/breadcrumb'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 
 interface IProps {
   className?: string

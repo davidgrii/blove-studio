@@ -1,14 +1,15 @@
 'use client'
 
-import React from 'react'
 import {
   IconQuoteFilled,
   IconReload,
   IconStarFilled
 } from '@tabler/icons-react'
-import { Button } from '@/components/ui/button'
 import { useRouter } from 'next/navigation'
+import React from 'react'
 import { FAVORITE_REVIEWS } from 'src/shared/constants'
+
+import { Button } from '@/components/ui/button'
 
 export const ReviewsShowcase = () => {
   const router = useRouter()

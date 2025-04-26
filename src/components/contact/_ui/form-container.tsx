@@ -1,6 +1,7 @@
 import React from 'react'
-import { cn } from '@/components/ui/utils'
+
 import { Form } from '@/components/contact/_ui/form'
+import { cn } from '@/components/ui/utils'
 
 interface IProps {
   className?: string
@@ -11,7 +12,7 @@ export const FormContainer: React.FC<IProps> = ({ className }) => {
     <div
       className={cn(
         className,
-        'py-10 px-4 rounded-3xl border border-white/50 xs:p-16 xs:px-8 sm:p-20',
+        'py-10 px-4 rounded-3xl border border-white/50 xs:p-16 xs:px-8 sm:p-20'
       )}
     >
       <div className='mx-auto max-w-2xl text-center flex flex-col items-center'>

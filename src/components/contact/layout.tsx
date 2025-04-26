@@ -1,6 +1,8 @@
 import React from 'react'
-import { BgcGradients, Container } from '@/components'
+
 import { cn } from '@/components/ui/utils'
+
+import { BgcGradients, Container } from '@/components'
 
 interface IProps {
   form: React.ReactNode

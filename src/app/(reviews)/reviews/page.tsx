@@ -1,7 +1,9 @@
-import { BgcGradients, Container } from '@/components'
-import { Reviews } from '@/components/reviews/reviews'
-import { CTASection } from '@/components/main/cta-section'
 import React from 'react'
+
+import { CTASection } from '@/components/main/cta-section'
+import { Reviews } from '@/components/reviews/reviews'
+
+import { BgcGradients, Container } from '@/components'
 
 export default function ReviewsPage() {
   return (

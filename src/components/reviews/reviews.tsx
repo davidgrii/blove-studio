@@ -1,11 +1,11 @@
 'use client'
 
-import React from 'react'
 import {
   IconQuoteFilled,
   IconReload,
   IconStarFilled
 } from '@tabler/icons-react'
+import React from 'react'
 import { REVIEWS } from 'src/shared/constants'
 
 interface IProps {
