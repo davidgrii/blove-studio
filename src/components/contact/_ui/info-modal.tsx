@@ -9,21 +9,23 @@ interface IProps {
   className?: string
 }
 
-export const InfoModal: React.FC<IProps> = ({ isOpen, setIsOpen }) => {
+export const ConfirmationModal: React.FC<IProps> = ({ isOpen, setIsOpen }) => {
   return (
     <>
       <AlertDialog.Root open={isOpen}>
         <AlertDialog.Portal>
-          <AlertDialog.Overlay className='fixed bg-black/15 backdrop-blur blur-sm inset-0 bg-blackA6 data-[state=open]:animate-overlayShow' />
+          <AlertDialog.Overlay className='fixed bg-black/15 backdrop-blur blur-sm inset-0' />
 
-          <AlertDialog.Content className='fixed bg-card/85 border backdrop-blur left-1/2 top-1/2 max-h-[85vh] w-[90vw] max-w-[500px] rounded-lg -translate-x-1/2 -translate-y-1/2 bg-gray1 p-6 focus:outline-none'>
+          <AlertDialog.Content className='fixed bg-card/80 border backdrop-blur left-1/2 top-1/2 max-h-[85vh] w-[90vw] max-w-[620px] rounded-lg -translate-x-1/2 -translate-y-1/2 bg-gray1 p-6 focus:outline-none'>
             <AlertDialog.Title className='m-0 text-lg font-medium'>
-              ⚠️ Note: Some projects may not include live preview links, as they
-              are no longer active or relevant for the original clients.
+              ⚠️ Note: If you came to this site via <b>Upwork</b> or{' '}
+              <b>Fiverr</b> platforms - please continue communicating on those
+              platforms
             </AlertDialog.Title>
-            <AlertDialog.Description className='mb-5 mt-[15px] text-sm leading-normal font-normal text-secondary-foreground'>
-              If needed, feel free to contact me — I’ll be happy to provide full
-              layout previews or visual demos of any specific project.
+            <AlertDialog.Description className='mb-8 mt-4 text-sm leading-normal font-normal text-secondary-foreground lg:max-w-[90%] '>
+              * I respect the policy of <b>Upwork</b> and <b>Fiverr</b>, and all
+              projects that provided these sites - will be paid and take place
+              only on them accordingly
             </AlertDialog.Description>
 
             <AlertDialog.Action asChild onClick={() => setIsOpen(false)}>

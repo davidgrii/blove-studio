@@ -173,7 +173,7 @@ export const PROJECTS: IProjects[] = [
     image: '/images/capsulux.webp',
     title: 'CapsuLux',
     tagline: 'Invest in of a new dimension of modern recreation',
-    link: '',
+    link: 'https://capsulux.com',
     description: ''
   },
   {
@@ -300,7 +300,7 @@ export const NAV_ITEMS: INavItems[] = [
     href: '/reviews',
     label: 'Reviews',
     Icon: AboutUsIcon
-  },
+  }
   // {
   //   id: 'contact',
   //   href: '/contact',
