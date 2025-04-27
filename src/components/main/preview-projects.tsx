@@ -1,10 +1,11 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
-import React from 'react'
+import React, { useState } from 'react'
 import { FAVORITE_PROJECTS } from 'src/shared/constants'
 
 import { Project } from '@/components/projects/_ui/project'
+import { InfoModal } from '@/components/projects/info-modal'
 import { Button } from '@/components/ui/button'
 
 interface IProps {
@@ -12,6 +13,8 @@ interface IProps {
 }
 
 export const PreviewProjects: React.FC<IProps> = () => {
+  const [isInfoModalOpen, setIsInfoModalOpen] = useState(false)
+
   const router = useRouter()
 
   const handleClick = () => {
@@ -23,9 +26,15 @@ export const PreviewProjects: React.FC<IProps> = () => {
       <div className={'flex flex-col items-center'}>
         <div className='grid grid-cols-1 gap-5 pt-0 sm:gap-7 lg:grid-cols-2'>
           {FAVORITE_PROJECTS.map((project) => (
-            <Project key={project.id} project={project} index={project.id} />
+            <Project
+              key={project.id}
+              project={project}
+              setIsOpen={setIsInfoModalOpen}
+            />
           ))}
         </div>
+
+        <InfoModal isOpen={isInfoModalOpen} setIsOpen={setIsInfoModalOpen} />
 
         <Button
           onClick={handleClick}
