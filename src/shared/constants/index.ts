@@ -41,15 +41,15 @@ export const PROJECTS: IProjects[] = [
     link: '',
     description: ''
   },
-  {
-    id: 4,
-    category: 'Tilda',
-    image: '/images/CosmoDom.webp',
-    title: 'CosmoDom',
-    tagline: 'Capsule houses for glamping and recreation centers',
-    link: 'https://cosmo-dom.com',
-    description: ''
-  },
+  // {
+  //   id: 4,
+  //   category: 'Tilda',
+  //   image: '/images/CosmoDom.webp',
+  //   title: 'CosmoDom',
+  //   tagline: 'Capsule houses for glamping and recreation centers',
+  //   link: 'https://cosmo-dom.com',
+  //   description: ''
+  // },
   {
     id: 5,
     category: 'Tilda',
@@ -183,6 +183,15 @@ export const PROJECTS: IProjects[] = [
     title: 'Photolab',
     tagline: 'Become a Catalyst for Change in the World',
     link: 'http://project12143711.tilda.ws',
+    description: ''
+  },
+  {
+    id: 21,
+    category: 'Tilda',
+    image: '/images/anneconelly.webp',
+    title: 'ANNE CONNELLY',
+    tagline: 'Technologist & Speaker (Portfolio website)',
+    link: 'https://project12744971.tilda.ws',
     description: ''
   }
 ]
@@ -326,7 +335,7 @@ export const ACHIEVEMENTS_DATA = [
     title: 'Rating from Fiverr',
     Icon: IconBrandFiverr,
     value: '5.0',
-    description: '23+ successful projects'
+    description: '30+ successful projects'
   },
   {
     title: 'Rating from Upwork',
