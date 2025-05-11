@@ -7,9 +7,12 @@ import {
 } from '@tabler/icons-react'
 import { useRouter } from 'next/navigation'
 import React from 'react'
-import { FAVORITE_REVIEWS } from 'src/shared/constants'
 
 import { Button } from '@/components/ui/button'
+
+import { APP_NAVIGATION } from '@/config/pages-url.config'
+
+import { REVIEWS } from '@/constants'
 
 export const ReviewsShowcase = () => {
   const router = useRouter()
@@ -30,7 +33,7 @@ export const ReviewsShowcase = () => {
         </h3>
 
         <div className={'grid grid-cols-1 gap-5 mt-8 md:grid-cols-3'}>
-          {FAVORITE_REVIEWS.map(
+          {REVIEWS.slice(1, 4).map(
             ({ id, name, location, rating, review, platform }) => (
               <div
                 key={id}
@@ -86,7 +89,8 @@ export const ReviewsShowcase = () => {
         </div>
 
         <Button
-          onClick={() => router.push('/reviews')}
+          variant={'outline'}
+          onClick={() => router.push(APP_NAVIGATION.REVIEWS)}
           className={'text-lg mt-10 rounded-full w-64 h-full py-3.5 border'}
         >
           See more

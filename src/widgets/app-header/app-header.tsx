@@ -1,9 +1,9 @@
 'use client'
 
 import React from 'react'
-import { NAV_ITEMS } from 'src/shared/constants'
+import { NAV_ITEMS } from 'src/constants'
 
-import { ContactButton } from '@/components/sign-in-button'
+import { ContactButton } from '@/components/contact-button'
 import { Logo } from '@/components/ui/logo'
 
 import { Layout } from '@/widgets/app-header/_ui/layout'

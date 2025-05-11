@@ -33,6 +33,7 @@ export const CTASection: React.FC<IProps> = () => {
         </span>
 
         <Button
+          variant={'default'}
           onClick={handleClick}
           className={
             'text-lg flex gap-3 items-center w-64 h-14 rounded-full border md:text-lg'

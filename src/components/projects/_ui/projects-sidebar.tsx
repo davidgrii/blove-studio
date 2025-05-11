@@ -6,7 +6,7 @@ import { Sorted } from '@/components/projects/_ui/sorted'
 import { AchievementsCards } from '@/components/projects/_ui/technologies-graphics'
 import { cn } from '@/components/ui/utils'
 
-import { useFilterStore } from '@/shared/store/filter.store'
+import { useFilterStore } from '@/store/filter.store'
 
 interface IProps {
   className?: string
@@ -14,7 +14,6 @@ interface IProps {
 
 export const ProjectsSidebar: React.FC<IProps> = ({ className }) => {
   const NAV = ['All projects', 'Web App', 'Websites', 'Tilda', 'WordPress']
-
   const stack = ['React', 'Next.js', 'TypeScript', 'Tailwind CSS']
 
   const { selectedCategory, setSelectedCategory } = useFilterStore()

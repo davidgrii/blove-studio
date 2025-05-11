@@ -8,11 +8,10 @@ import { FormErrors } from '@/components/contact/_ui/form-errors'
 import { TermsCheckbox } from '@/components/contact/_ui/terms-checkbox'
 import { Button } from '@/components/ui/button'
 import { Spinner } from '@/components/ui/spinner'
-import { cn } from '@/components/ui/utils'
 
 import { contactFormSchema } from '@/types/zodSchemas'
 
-import { EmailIcon, NameIcon, PhoneNumberIcon } from '@/shared/icons/icons'
+import { Icons } from '@/assets/icons/icons'
 
 type IForm = {
   name: string
@@ -22,11 +21,7 @@ type IForm = {
   agreeToTerms: boolean
 }
 
-interface IProps {
-  className?: string
-}
-
-export const Form: React.FC<IProps> = ({ className }) => {
+export const Form = () => {
   const {
     register,
     handleSubmit,
@@ -58,7 +53,7 @@ export const Form: React.FC<IProps> = ({ className }) => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className={cn(className, 'mx-auto max-w-xl sm:mt-10')}
+      className={'mx-auto max-w-xl sm:mt-10'}
     >
       <div className='grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2 text-left font-light sm:gap-y-6'>
         <div className='sm:col-span-2'>
@@ -72,7 +67,7 @@ export const Form: React.FC<IProps> = ({ className }) => {
               className='block w-full border rounded-full py-5 text-lg px-7 bg-background/0 placeholder-foreground/70 focus:outline-none'
             />
             <span className='absolute inset-y-0 right-[25px] flex items-center opacity-80'>
-              <NameIcon />
+              <Icons.Name />
             </span>
           </div>
 
@@ -89,7 +84,7 @@ export const Form: React.FC<IProps> = ({ className }) => {
               className='block w-full border rounded-full py-5 text-lg px-7 bg-background/0 placeholder-foreground/70 focus:outline-none'
             />
             <span className='absolute inset-y-0 right-[25px] flex items-center opacity-80'>
-              {<EmailIcon />}
+              <Icons.Email />
             </span>
           </div>
 
@@ -111,7 +106,7 @@ export const Form: React.FC<IProps> = ({ className }) => {
               className='block w-full border rounded-full py-5 text-lg px-7 bg-background/0 placeholder-foreground/70 focus:outline-none'
             />
             <span className='absolute inset-y-0 right-[25px] flex items-center opacity-80'>
-              {<PhoneNumberIcon />}
+              <Icons.Phone />
             </span>
           </div>
 

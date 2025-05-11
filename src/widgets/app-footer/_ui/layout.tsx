@@ -6,10 +6,10 @@ import React from 'react'
 
 import { cn } from '@/components/ui/utils'
 
-import { INavItems } from '@/types'
+import { INavItem } from '@/types'
 
 interface IProps {
-  navItems: INavItems[]
+  navItems: INavItem[]
   className?: string
 }
 
@@ -17,7 +17,7 @@ export const Layout: React.FC<IProps> = ({ navItems }) => {
   const currentPage = usePathname()
 
   return (
-    <footer className='flex relative z-20 pt-8 pb-5 flex-col rounded-tl-3xl rounded-tr-3xl bg-card/70 justify-center border'>
+    <footer className='flex pt-8 pb-5 flex-col rounded-tl-3xl rounded-tr-3xl bg-card/70 backdrop-blur justify-center border'>
       <ul className='flex px-5 flex-wrap text-lg justify-center gap-6 sm:flex-row sm:gap-20'>
         {navItems.map(({ href, label }) => (
           <li key={label}>

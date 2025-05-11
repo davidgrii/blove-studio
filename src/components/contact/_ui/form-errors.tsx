@@ -13,8 +13,6 @@ export const FormErrors: React.FC<IProps> = ({ message, className }) => {
   }
 
   return (
-    <p className={cn(className, 'text-sm text-center text-red-500 pt-3')}>
-      {message}
-    </p>
+    <p className={cn(className, 'text-sm ml-6 text-red-500 pt-3')}>{message}</p>
   )
 }

@@ -1,5 +1,7 @@
-export interface IProjects {
-  id: number
+import React from 'react'
+
+export interface IProject {
+  id: string
   category: string
   image: string
   title: string
@@ -8,24 +10,15 @@ export interface IProjects {
   description: string
 }
 
-export interface IProject {
-  id: number
-  title: string
-  image: string
-  description: string
-  link: string
-  tagline: string
-}
-
-export interface INavItems {
+export interface INavItem {
   id: string
   href: string
   label: string
   Icon: () => React.JSX.Element
 }
 
-export interface IReviews {
-  id: number
+export interface IReview {
+  id: string
   name: string
   location: string
   rating: string

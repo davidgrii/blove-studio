@@ -1,12 +1,8 @@
 import React from 'react'
 
-import { ProjectsIcon } from '@/shared/icons/icons'
+import { Icons } from '@/assets/icons/icons'
 
-interface IProps {
-  className?: string
-}
-
-export const NotFoundProjects: React.FC<IProps> = ({ className }) => {
+export const NotFoundProjects = () => {
   return (
     <>
       <div
@@ -14,7 +10,7 @@ export const NotFoundProjects: React.FC<IProps> = ({ className }) => {
           'flex justify-center items-center gap-2 font-normal text-secondary-foreground p-6 pt-0 px-4 sm:px-6'
         }
       >
-        <ProjectsIcon />
+        <Icons.Projects />
         <span>No projects found</span>
       </div>
     </>
