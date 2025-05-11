@@ -3,6 +3,8 @@ import React from 'react'
 
 import { cn } from '@/components/ui/utils'
 
+import { APP_NAVIGATION } from '@/config/pages-url.config'
+
 interface Props {
   text: string
   size: 'small' | 'medium' | 'large'
@@ -17,7 +19,7 @@ export const Logo: React.FC<Props> = ({ text, size }) => {
   }
 
   return (
-    <Link href={'/'}>
+    <Link href={APP_NAVIGATION.MAIN}>
       <span
         className={cn(
           logoSizes[size],

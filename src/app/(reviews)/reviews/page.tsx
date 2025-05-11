@@ -1,13 +1,12 @@
 import React from 'react'
+import { BgcGradients, Container } from 'src/components'
 
 import { CTASection } from '@/components/main/cta-section'
 import { Reviews } from '@/components/reviews/reviews'
 
-import { BgcGradients, Container } from '@/components'
-
 export default function ReviewsPage() {
   return (
-    <div className='relative isolate'>
+    <>
       <BgcGradients position={'top-left'} />
 
       <Container>
@@ -17,6 +16,6 @@ export default function ReviewsPage() {
       </Container>
 
       <BgcGradients position={'bottom'} />
-    </div>
+    </>
   )
 }

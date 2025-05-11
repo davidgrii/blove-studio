@@ -6,7 +6,8 @@ import {
   IconStarFilled
 } from '@tabler/icons-react'
 import React from 'react'
-import { REVIEWS } from 'src/shared/constants'
+
+import { REVIEWS } from '@/constants'
 
 interface IProps {
   className?: string

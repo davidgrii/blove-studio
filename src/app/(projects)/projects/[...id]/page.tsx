@@ -1,4 +1,5 @@
 import { Separator } from '@radix-ui/react-select'
+import { BgcGradients, Container } from 'src/components'
 
 import { Breadcrumbs } from '@/components/projects/_ui/breadcrumbs'
 import {
@@ -11,20 +12,18 @@ import {
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 
-import { BgcGradients, Container } from '@/components'
-
 export default function FullProjectPage() {
   return (
     <div className='relative isolate'>
       <BgcGradients position={'top-left'} />
 
       <Container className={'min-h-screen flex justify-between gap-6'}>
-        <div></div>
         <Card className='w-[30%] fixed text-foreground border bg-[#171719d9]/30 backdrop-blur'>
           <CardHeader className='bg-background/0 border-b p-6'>
             <CardTitle className='text-xl group inline-flex items-center'>
               CosmoDom | capsule houses
             </CardTitle>
+
             <Breadcrumbs />
           </CardHeader>
 
@@ -34,7 +33,6 @@ export default function FullProjectPage() {
               <ul className='grid gap-3'>
                 <li className='flex items-center justify-between'>
                   <span className='text-muted-foreground'>Time left:</span>
-                  <span className={'text-red-500'}>{'days'} DAYS</span>
                 </li>
                 <li className='flex items-center justify-between'>
                   <span className='text-muted-foreground'>Status:</span>
@@ -60,6 +58,7 @@ export default function FullProjectPage() {
                     Requirements:
                   </TabsTrigger>
                 </TabsList>
+
                 <TabsContent value='Technologies'>
                   <ScrollArea className='h-40 w-full border-border border rounded-lg p-2.5'>
                     <ul className='grid gap-3 mr-1.5'>
@@ -80,6 +79,7 @@ export default function FullProjectPage() {
               </Tabs>
             </div>
           </CardContent>
+
           <CardFooter className={'border-t p-4'}>
             <div className='text-xs text-foreground/70 font-light'>
               Last update:{' '}
@@ -87,6 +87,8 @@ export default function FullProjectPage() {
             </div>
           </CardFooter>
         </Card>
+
+        <div></div>
       </Container>
 
       <BgcGradients position={'bottom'} />

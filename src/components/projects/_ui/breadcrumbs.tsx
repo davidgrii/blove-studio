@@ -1,47 +1,35 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import React from 'react'
 
 import {
   Breadcrumb,
   BreadcrumbItem,
-  BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbSeparator
 } from '@/components/ui/breadcrumb'
 
-interface IProps {
-  className?: string
-}
+import { APP_NAVIGATION } from '@/config/pages-url.config'
 
-export const Breadcrumbs: React.FC<IProps> = ({ className }) => {
-  const pathname = usePathname()
-
-  const pathSegments = pathname.split('/').filter(Boolean)
-
-  const currentProject = pathSegments[pathSegments.length - 1]
-
+export const Breadcrumbs = () => {
   return (
     <Breadcrumb>
       <BreadcrumbList>
         <BreadcrumbItem>
-          <BreadcrumbLink>
-            <Link href={'/'}>Home</Link>
-          </BreadcrumbLink>
+          <Link href={APP_NAVIGATION.MAIN}>Home</Link>
         </BreadcrumbItem>
+
         <BreadcrumbSeparator />
+
         <BreadcrumbItem>
-          <BreadcrumbLink>
-            <Link href={'/projects'}>Projects</Link>
-          </BreadcrumbLink>
+          <Link href={APP_NAVIGATION.PROJECTS}>Projects</Link>
         </BreadcrumbItem>
+
         <BreadcrumbSeparator />
+
         <BreadcrumbItem>
-          <BreadcrumbLink>
-            <Link href={''}>{currentProject}</Link>
-          </BreadcrumbLink>
+          <Link href={'#'}>ID</Link>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>

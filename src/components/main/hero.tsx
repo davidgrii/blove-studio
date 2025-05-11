@@ -6,7 +6,7 @@ import React from 'react'
 
 import { Button } from '@/components/ui/button'
 
-import { CargoBoltIcon, CoinsAppIcon, TinseleIcon } from '@/shared/icons/icons'
+import { CargoBoltIcon, CoinsAppIcon, TinseleIcon } from '@/assets/icons/icons'
 
 interface IProps {
   className?: string

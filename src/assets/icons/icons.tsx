@@ -1,369 +1,301 @@
 import React from 'react'
 
-export const LinkIcon = () => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width='26'
-    height='26'
-    viewBox='0 0 24 24'
-    fill='none'
-    stroke='currentColor'
-    strokeWidth='2'
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    className='icon icon-tabler icons-tabler-outline icon-tabler-external-link'
-  >
-    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-    <path d='M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6' />
-    <path d='M11 13l9 -9' />
-    <path d='M15 4h5v5' />
-  </svg>
-)
+type IconProps = React.HtmlHTMLAttributes<SVGElement>
 
-export const ClickIcon = () => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width='24'
-    height='24'
-    viewBox='0 0 24 24'
-    fill='none'
-    stroke='currentColor'
-    strokeWidth='2'
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    className='icon icon-tabler icons-tabler-outline icon-tabler-hand-click'
-  >
-    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-    <path d='M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5' />
-    <path d='M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5' />
-    <path d='M14 10.5a1.5 1.5 0 0 1 3 0v1.5' />
-    <path d='M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47' />
-    <path d='M5 3l-1 -1' />
-    <path d='M4 7h-1' />
-    <path d='M14 3l1 -1' />
-    <path d='M15 6h1' />
-  </svg>
-)
-
-export const MenuIcon = () => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width={34}
-    height={34}
-    viewBox='0 0 24 24'
-    fill='none'
-    stroke='currentColor'
-    strokeWidth={2}
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    className='icon icon-tabler icons-tabler-outline icon-tabler-menu-deep'
-  >
-    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-    <path d='M4 6h16' />
-    <path d='M7 12h13' />
-    <path d='M10 18h10' />
-  </svg>
-)
-
-export const ProjectsIcon = () => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width={24}
-    height={24}
-    viewBox='0 0 24 24'
-    fill='none'
-    stroke='currentColor'
-    strokeWidth={2}
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    className='icon icon-tabler icons-tabler-outline icon-tabler-apps'
-  >
-    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-    <path d='M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z' />
-    <path d='M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z' />
-    <path d='M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z' />
-    <path d='M14 7l6 0' />
-    <path d='M17 4l0 6' />
-  </svg>
-)
-export const EmailIcon = () => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width={24}
-    height={24}
-    viewBox='0 0 24 24'
-    fill={'color'}
-    stroke='currentColor'
-    strokeWidth={1.5}
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    className='icon icon-tabler icons-tabler-outline icon-tabler-mail'
-  >
-    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-    <path d='M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z' />
-    <path d='M3 7l9 6l9 -6' />
-  </svg>
-)
-
-export const UpworkIcon = () => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width='18'
-    height='18'
-    viewBox='0 0 24 24'
-    fill='none'
-    stroke='currentColor'
-    strokeWidth='1.8'
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    className='icon icon-tabler icons-tabler-outline icon-tabler-brand-upwork'
-  >
-    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-    <path d='M3 7v5a3 3 0 0 0 6 0v-5h1l4 6c.824 1.319 1.945 2 3.5 2a3.5 3.5 0 0 0 0 -7c-2.027 0 -3.137 1 -3.5 3c-.242 1.33 -.908 4 -2 8' />
-  </svg>
-)
-export const HomeIcon = () => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width={24}
-    height={24}
-    viewBox='0 0 24 24'
-    fill='none'
-    stroke='currentColor'
-    strokeWidth={2}
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    className='icon icon-tabler icons-tabler-outline icon-tabler-home'
-  >
-    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-    <path d='M5 12l-2 0l9 -9l9 9l-2 0' />
-    <path d='M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7' />
-    <path d='M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6' />
-  </svg>
-)
-export const AboutUsIcon = () => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width={24}
-    height={24}
-    viewBox='0 0 24 24'
-    fill='none'
-    stroke='currentColor'
-    strokeWidth={2}
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    className='icon icon-tabler icons-tabler-outline icon-tabler-users-group'
-  >
-    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-    <path d='M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0' />
-    <path d='M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1' />
-    <path d='M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0' />
-    <path d='M17 10h2a2 2 0 0 1 2 2v1' />
-    <path d='M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0' />
-    <path d='M3 13v-1a2 2 0 0 1 2 -2h2' />
-  </svg>
-)
-
-export const ContactIcon = () => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width='24'
-    height='24'
-    viewBox='0 0 24 24'
-    fill='none'
-    stroke='currentColor'
-    strokeWidth='2'
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    className='lucide lucide-contact'
-  >
-    <path d='M16 2v2' />
-    <path d='M7 22v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2' />
-    <path d='M8 2v2' />
-    <circle cx='12' cy='11' r='3' />
-    <rect x='3' y='4' width='18' height='18' rx='2' />
-  </svg>
-)
-
-export const ReviewsIcon = () => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width={24}
-    height={24}
-    viewBox='0 0 24 24'
-    fill='none'
-    stroke='currentColor'
-    strokeWidth={2}
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    className='icon icon-tabler icons-tabler-outline icon-tabler-messages'
-  >
-    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-    <path d='M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10' />
-    <path d='M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2' />
-  </svg>
-)
-
-export const NameIcon = () => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width={24}
-    height={24}
-    viewBox='0 0 24 24'
-    fill='none'
-    stroke='currentColor'
-    strokeWidth={1.5}
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    className='icon icon-tabler icons-tabler-outline icon-tabler-user-circle'
-  >
-    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-    <path d='M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0' />
-    <path d='M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0' />
-    <path d='M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855' />
-  </svg>
-)
-
-export const FiverIcon = () => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width='16'
-    height='16'
-    viewBox='0 0 24 24'
-    fill='none'
-    stroke='currentColor'
-    strokeWidth='1.8'
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    className='icon icon-tabler icons-tabler-outline icon-tabler-brand-fiverr'
-  >
-    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-    <path d='M15 3h-2a6 6 0 0 0 -6 6h-3v4h3v8h4v-7h4v7h4v-11h-8v-1.033a1.967 1.967 0 0 1 2 -1.967h2v-4z' />
-  </svg>
-)
-
-export const QuestionsIcon = () => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width='24'
-    height='24'
-    viewBox='0 0 24 24'
-    fill='none'
-    stroke='currentColor'
-    strokeWidth='2'
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    className='lucide lucide-circle-help'
-  >
-    <circle cx='12' cy='12' r='10' />
-    <path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' />
-    <path d='M12 17h.01' />
-  </svg>
-)
-
-export const WordPressIcon = () => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width={24}
-    height={24}
-    viewBox='0 0 24 24'
-    fill='none'
-    stroke='currentColor'
-    strokeWidth={1.5}
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    className='icon icon-tabler icons-tabler-outline icon-tabler-brand-wordpress'
-  >
-    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-    <path d='M9.5 9h3' />
-    <path d='M4 9h2.5' />
-    <path d='M11 9l3 11l4 -9' />
-    <path d='M5.5 9l3.5 11l3 -7' />
-    <path d='M18 11c.177 -.528 1 -1.364 1 -2.5c0 -1.78 -.776 -2.5 -1.875 -2.5c-.898 0 -1.125 .812 -1.125 1.429c0 1.83 2 2.058 2 3.571z' />
-    <path d='M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0' />
-  </svg>
-)
-
-export const ReactIcon = () => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width='24'
-    height='24'
-    viewBox='0 0 24 24'
-    fill='none'
-    stroke='currentColor'
-    strokeWidth='1.5'
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    className='icon icon-tabler icons-tabler-outline icon-tabler-brand-react'
-  >
-    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-    <path d='M6.306 8.711c-2.602 .723 -4.306 1.926 -4.306 3.289c0 2.21 4.477 4 10 4c.773 0 1.526 -.035 2.248 -.102' />
-    <path d='M17.692 15.289c2.603 -.722 4.308 -1.926 4.308 -3.289c0 -2.21 -4.477 -4 -10 -4c-.773 0 -1.526 .035 -2.25 .102' />
-    <path d='M6.305 15.287c-.676 2.615 -.485 4.693 .695 5.373c1.913 1.105 5.703 -1.877 8.464 -6.66c.387 -.67 .733 -1.339 1.036 -2' />
-    <path d='M17.694 8.716c.677 -2.616 .487 -4.696 -.694 -5.376c-1.913 -1.105 -5.703 1.877 -8.464 6.66c-.387 .67 -.733 1.34 -1.037 2' />
-    <path d='M12 5.424c-1.925 -1.892 -3.82 -2.766 -5 -2.084c-1.913 1.104 -1.226 5.877 1.536 10.66c.386 .67 .793 1.304 1.212 1.896' />
-    <path d='M12 18.574c1.926 1.893 3.821 2.768 5 2.086c1.913 -1.104 1.226 -5.877 -1.536 -10.66c-.375 -.65 -.78 -1.283 -1.212 -1.897' />
-    <path d='M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732z' />
-  </svg>
-)
-
-export const JavaScriptIcon = () => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width={24}
-    height={24}
-    viewBox='0 0 24 24'
-    fill='none'
-    stroke='currentColor'
-    strokeWidth={1.5}
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    className='icon icon-tabler icons-tabler-outline icon-tabler-brand-javascript'
-  >
-    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-    <path d='M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z' />
-    <path d='M7.5 8h3v8l-2 -1' />
-    <path d='M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5' />
-  </svg>
-)
-
-export const NextJSIcon = () => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width={24}
-    height={24}
-    viewBox='0 0 24 24'
-    fill='none'
-    stroke='currentColor'
-    strokeWidth={1.5}
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    className='icon icon-tabler icons-tabler-outline icon-tabler-brand-nextjs'
-  >
-    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-    <path d='M9 15v-6l7.745 10.65a9 9 0 1 1 2.255 -1.993' />
-    <path d='M15 12v-3' />
-  </svg>
-)
-
-export const PhoneNumberIcon = () => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    width={24}
-    height={24}
-    viewBox='0 0 24 24'
-    fill='none'
-    stroke='currentColor'
-    strokeWidth={1.5}
-    strokeLinecap='round'
-    strokeLinejoin='round'
-    className='icon icon-tabler icons-tabler-outline icon-tabler-phone'
-  >
-    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-    <path d='M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2' />
-  </svg>
-)
+export const Icons = {
+  Link: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='26'
+      height='26'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      {...props}
+    >
+      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+      <path d='M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6' />
+      <path d='M11 13l9 -9' />
+      <path d='M15 4h5v5' />
+    </svg>
+  ),
+  Menu: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width={34}
+      height={34}
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth={2}
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      {...props}
+    >
+      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+      <path d='M4 6h16' />
+      <path d='M7 12h13' />
+      <path d='M10 18h10' />
+    </svg>
+  ),
+  Projects: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width={24}
+      height={24}
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth={2}
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      {...props}
+    >
+      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+      <path d='M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z' />
+      <path d='M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z' />
+      <path d='M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z' />
+      <path d='M14 7l6 0' />
+      <path d='M17 4l0 6' />
+    </svg>
+  ),
+  Email: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width={24}
+      height={24}
+      viewBox='0 0 24 24'
+      fill={'color'}
+      stroke='currentColor'
+      strokeWidth={1.5}
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      {...props}
+    >
+      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+      <path d='M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z' />
+      <path d='M3 7l9 6l9 -6' />
+    </svg>
+  ),
+  Home: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width={24}
+      height={24}
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth={2}
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      {...props}
+    >
+      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+      <path d='M5 12l-2 0l9 -9l9 9l-2 0' />
+      <path d='M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7' />
+      <path d='M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6' />
+    </svg>
+  ),
+  AboutUs: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width={24}
+      height={24}
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth={2}
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      {...props}
+    >
+      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+      <path d='M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0' />
+      <path d='M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1' />
+      <path d='M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0' />
+      <path d='M17 10h2a2 2 0 0 1 2 2v1' />
+      <path d='M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0' />
+      <path d='M3 13v-1a2 2 0 0 1 2 -2h2' />
+    </svg>
+  ),
+  Contact: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      {...props}
+    >
+      <path d='M16 2v2' />
+      <path d='M7 22v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2' />
+      <path d='M8 2v2' />
+      <circle cx='12' cy='11' r='3' />
+      <rect x='3' y='4' width='18' height='18' rx='2' />
+    </svg>
+  ),
+  Reviews: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width={24}
+      height={24}
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth={2}
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      {...props}
+    >
+      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+      <path d='M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10' />
+      <path d='M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2' />
+    </svg>
+  ),
+  Name: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width={24}
+      height={24}
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth={1.5}
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      {...props}
+    >
+      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+      <path d='M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0' />
+      <path d='M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0' />
+      <path d='M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855' />
+    </svg>
+  ),
+  Questions: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      {...props}
+    >
+      <circle cx='12' cy='12' r='10' />
+      <path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' />
+      <path d='M12 17h.01' />
+    </svg>
+  ),
+  WordPress: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width={24}
+      height={24}
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth={1.5}
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      {...props}
+    >
+      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+      <path d='M9.5 9h3' />
+      <path d='M4 9h2.5' />
+      <path d='M11 9l3 11l4 -9' />
+      <path d='M5.5 9l3.5 11l3 -7' />
+      <path d='M18 11c.177 -.528 1 -1.364 1 -2.5c0 -1.78 -.776 -2.5 -1.875 -2.5c-.898 0 -1.125 .812 -1.125 1.429c0 1.83 2 2.058 2 3.571z' />
+      <path d='M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0' />
+    </svg>
+  ),
+  React: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth='1.5'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      {...props}
+    >
+      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+      <path d='M6.306 8.711c-2.602 .723 -4.306 1.926 -4.306 3.289c0 2.21 4.477 4 10 4c.773 0 1.526 -.035 2.248 -.102' />
+      <path d='M17.692 15.289c2.603 -.722 4.308 -1.926 4.308 -3.289c0 -2.21 -4.477 -4 -10 -4c-.773 0 -1.526 .035 -2.25 .102' />
+      <path d='M6.305 15.287c-.676 2.615 -.485 4.693 .695 5.373c1.913 1.105 5.703 -1.877 8.464 -6.66c.387 -.67 .733 -1.339 1.036 -2' />
+      <path d='M17.694 8.716c.677 -2.616 .487 -4.696 -.694 -5.376c-1.913 -1.105 -5.703 1.877 -8.464 6.66c-.387 .67 -.733 1.34 -1.037 2' />
+      <path d='M12 5.424c-1.925 -1.892 -3.82 -2.766 -5 -2.084c-1.913 1.104 -1.226 5.877 1.536 10.66c.386 .67 .793 1.304 1.212 1.896' />
+      <path d='M12 18.574c1.926 1.893 3.821 2.768 5 2.086c1.913 -1.104 1.226 -5.877 -1.536 -10.66c-.375 -.65 -.78 -1.283 -1.212 -1.897' />
+      <path d='M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732z' />
+    </svg>
+  ),
+  JavaScript: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width={24}
+      height={24}
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth={1.5}
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      {...props}
+    >
+      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+      <path d='M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z' />
+      <path d='M7.5 8h3v8l-2 -1' />
+      <path d='M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5' />
+    </svg>
+  ),
+  NextJS: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width={24}
+      height={24}
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth={1.5}
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      {...props}
+    >
+      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+      <path d='M9 15v-6l7.745 10.65a9 9 0 1 1 2.255 -1.993' />
+      <path d='M15 12v-3' />
+    </svg>
+  ),
+  Phone: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width={24}
+      height={24}
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth={1.5}
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      {...props}
+    >
+      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+      <path d='M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2' />
+    </svg>
+  )
+}
 
 export const CargoBoltIcon = ({
   width,
@@ -475,11 +407,3 @@ export const TinseleIcon = ({
     />
   </svg>
 )
-
-export const IVGPropertyIcon = ({
-  width,
-  height
-}: {
-  width: number
-  height: number
-}) => <></>

@@ -1,16 +1,18 @@
 import Image from 'next/image'
 import React from 'react'
 
-import { LinkIcon } from '@/shared/icons/icons'
+import { Icons } from '@/assets/icons/icons'
+
 import { IProject } from '@/types'
 
 interface IProps {
   project: IProject
+  index: number
   setIsOpen: (isOpen: boolean) => void
   className?: string
 }
 
-export const Project: React.FC<IProps> = ({ project, setIsOpen }) => {
+export const Project: React.FC<IProps> = ({ project, setIsOpen, index }) => {
   const handleClick = () => {
     if (project.link) {
       window.open(project.link, '_blank')
@@ -34,7 +36,7 @@ export const Project: React.FC<IProps> = ({ project, setIsOpen }) => {
         />
         <div className='absolute  inset-0 bg-black/50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500'>
           <span className='flex gap-2 items-center text-lg mb-1 font-bold text-foreground sm:mb-4 sm:text-2xl lg:text-3xl '>
-            You can see project <LinkIcon />
+            You can see project <Icons.Link />
           </span>
           <p className='text-white font-light text-xs text-center px-2 transition-all duration-500 ease-in-out sm:px-4 sm:text-lg '>
             {project.description}
@@ -66,7 +68,7 @@ export const Project: React.FC<IProps> = ({ project, setIsOpen }) => {
         </div>
 
         <div className='flex justify-center items-center w-full h-7 max-h-7 max-w-7 rounded font-normal border-white/40 border text-foreground sm:max-w-8 sm:h-8   sm:max-h-8'>
-          <h2 className='text-xs sm:text-md '>{project.id + 1}</h2>
+          <h2 className='text-xs sm:text-md '>{index + 1}</h2>
         </div>
       </div>
     </div>

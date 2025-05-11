@@ -5,10 +5,11 @@ import { usePathname } from 'next/navigation'
 import React from 'react'
 
 import { cn } from '@/components/ui/utils'
-import { INavItems } from '@/types'
+
+import { INavItem } from '@/types'
 
 interface IProps {
-  navItems: INavItems[]
+  navItems: INavItem[]
   className?: string
 }
 
@@ -24,7 +25,7 @@ export const NavBar: React.FC<IProps> = ({ navItems, className }) => {
               <Link
                 href={href}
                 className={cn(
-                  currentPage === href
+                  currentPage.slice(1) === id
                     ? 'text-foreground font-normal'
                     : 'text-foreground/60 font-light',
                   'transition-colors hover:text-foreground/90'

@@ -1,7 +1,8 @@
 import React from 'react'
-import { ACHIEVEMENTS_DATA } from 'src/shared/constants'
 
 import { Card } from '@/components/ui/card'
+
+import { ACHIEVEMENTS_DATA } from '@/constants'
 
 interface IProps {
   className?: string
@@ -9,7 +10,7 @@ interface IProps {
 
 export const AchievementsCards: React.FC<IProps> = () => {
   return (
-    <div className={'grid grid-cols-1 gap-2.5 w-full sm:gap-7 sm:grid-cols-2 '}>
+    <div className={'grid grid-cols-1 gap-2.5 w-full sm:gap-5 sm:grid-cols-2 '}>
       {ACHIEVEMENTS_DATA.map(({ title, Icon, value, description }, index) => (
         <Card
           key={index}

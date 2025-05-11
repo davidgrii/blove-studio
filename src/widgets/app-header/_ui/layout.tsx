@@ -5,7 +5,7 @@ import { DialogTitle } from '@/components/ui/dialog'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { cn } from '@/components/ui/utils'
 
-import { MenuIcon } from '@/shared/icons/icons'
+import { Icons } from '@/assets/icons/icons'
 
 interface IProps {
   logo: React.ReactNode
@@ -42,7 +42,7 @@ export const Layout: React.FC<IProps> = ({
 
             <SheetTrigger asChild>
               <Button variant='menu' className={'px-2.5'}>
-                <MenuIcon />
+                <Icons.Menu />
               </Button>
             </SheetTrigger>
           </Sheet>

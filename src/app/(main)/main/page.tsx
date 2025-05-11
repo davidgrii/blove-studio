@@ -1,30 +1,27 @@
 import React from 'react'
+import { BgcGradients, Container } from 'src/components'
 
 import { CTASection } from '@/components/main/cta-section'
 import { Hero } from '@/components/main/hero'
 import { PreviewProjects } from '@/components/main/preview-projects'
 import { ReviewsShowcase } from '@/components/main/reviews-showcase'
 
-import { BgcGradients, Container } from '@/components'
-
 export default function HomePage() {
   return (
     <>
-      <div className='relative isolate'>
-        <BgcGradients position={'top-left'} />
+      <BgcGradients position={'top-left'} />
 
-        <Container>
-          <Hero />
+      <Container>
+        <Hero />
 
-          <PreviewProjects />
+        <PreviewProjects />
 
-          <ReviewsShowcase />
+        <ReviewsShowcase />
 
-          <CTASection />
-        </Container>
+        <CTASection />
+      </Container>
 
-        <BgcGradients position={'bottom'} />
-      </div>
+      <BgcGradients position={'bottom'} />
     </>
   )
 }

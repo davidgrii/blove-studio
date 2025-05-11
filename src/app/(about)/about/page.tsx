@@ -1,13 +1,12 @@
 import { IconUsers } from '@tabler/icons-react'
 import Image from 'next/image'
 import React from 'react'
+import { BgcGradients, Container } from 'src/components'
 
 import { Faqs } from '@/components/about/_ui/faqs'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { cn } from '@/components/ui/utils'
-
-import { BgcGradients, Container } from '@/components'
 
 export default function AboutPage() {
   const faqs = [

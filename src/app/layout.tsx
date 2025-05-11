@@ -24,7 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={cn('bg-background scroll-smooth', manrope.className)}>
+      <body
+        className={cn(
+          'bg-background scroll-smooth relative isolate',
+          manrope.className
+        )}
+      >
         {children}
       </body>
     </html>

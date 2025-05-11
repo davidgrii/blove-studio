@@ -2,31 +2,31 @@
 
 import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
-import { FAVORITE_PROJECTS } from 'src/shared/constants'
 
 import { Project } from '@/components/projects/_ui/project'
 import { InfoModal } from '@/components/projects/info-modal'
 import { Button } from '@/components/ui/button'
 
-interface IProps {
-  className?: string
-}
+import { APP_NAVIGATION } from '@/config/pages-url.config'
 
-export const PreviewProjects: React.FC<IProps> = () => {
+import { PROJECTS } from '@/constants'
+
+export const PreviewProjects = () => {
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false)
 
   const router = useRouter()
 
   const handleClick = () => {
-    router.push('/projects#projects-list')
+    router.push(`${APP_NAVIGATION.PROJECTS}/#projects-list`)
   }
 
   return (
     <section id={'preview-projects'} className={'mb-20'}>
       <div className={'flex flex-col items-center'}>
         <div className='grid grid-cols-1 gap-5 pt-0 sm:gap-7 lg:grid-cols-2'>
-          {FAVORITE_PROJECTS.map((project) => (
+          {PROJECTS.slice(1, 3).map((project, index) => (
             <Project
+              index={index}
               key={project.id}
               project={project}
               setIsOpen={setIsInfoModalOpen}

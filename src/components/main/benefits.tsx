@@ -9,12 +9,7 @@ import React from 'react'
 
 import { Card } from '@/components/ui/card'
 
-import {
-  JavaScriptIcon,
-  NextJSIcon,
-  ReactIcon,
-  WordPressIcon
-} from '@/shared/icons/icons'
+import { Icons } from '@/assets/icons/icons'
 
 interface IProps {
   className?: string
@@ -59,10 +54,10 @@ export const Benefits: React.FC<IProps> = ({ className }) => {
 
         <div className={'flex justify-between p-4 border-t sm:px-6 sm:pb-4'}>
           <div className={'flex gap-4 text-muted-foreground'}>
-            <ReactIcon />
-            <NextJSIcon />
-            <JavaScriptIcon />
-            <WordPressIcon />
+            <Icons.React />
+            <Icons.NextJS />
+            <Icons.JavaScript />
+            <Icons.WordPress />
           </div>
 
           <Link
@@ -109,10 +104,10 @@ export const Benefits: React.FC<IProps> = ({ className }) => {
 
         <div className={'flex justify-between p-4 border-t sm:px-6 sm:pb-4'}>
           <div className={'flex gap-4 text-muted-foreground'}>
-            <ReactIcon />
-            <NextJSIcon />
-            <JavaScriptIcon />
-            <WordPressIcon />
+            <Icons.React />
+            <Icons.NextJS />
+            <Icons.JavaScript />
+            <Icons.WordPress />
           </div>
 
           <Link
@@ -158,10 +153,10 @@ export const Benefits: React.FC<IProps> = ({ className }) => {
 
         <div className={'flex justify-between p-4 border-t sm:px-6 sm:pb-4'}>
           <div className={'flex gap-4 text-muted-foreground'}>
-            <ReactIcon />
-            <NextJSIcon />
-            <JavaScriptIcon />
-            <WordPressIcon />
+            <Icons.React />
+            <Icons.NextJS />
+            <Icons.JavaScript />
+            <Icons.WordPress />
           </div>
 
           <Link

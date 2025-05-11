@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { NAV_ITEMS } from 'src/shared/constants'
+import { NAV_ITEMS } from 'src/constants'
 
 import { Layout } from '@/widgets/app-footer/_ui/layout'
 
