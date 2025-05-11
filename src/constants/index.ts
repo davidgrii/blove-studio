@@ -1,10 +1,14 @@
 import { IconBrandFiverr, IconBrandUpwork } from '@tabler/icons-react'
 import { LayoutList, ThumbsUp } from 'lucide-react'
+import { v4 as uuidv4 } from 'uuid'
 
-import { AboutUsIcon, HomeIcon, ProjectsIcon } from '@/shared/icons/icons'
-import { INavItems, IProjects, IReviews } from '@/types'
+import { Icons } from '@/assets/icons/icons'
 
-export const PROJECTS: IProjects[] = [
+import { APP_NAVIGATION } from '@/config/pages-url.config'
+
+import { INavItem, IProject, IReview } from '@/types'
+
+export const PROJECTS: IProject[] = [
   {
     id: 0,
     category: 'Websites',
@@ -15,7 +19,6 @@ export const PROJECTS: IProjects[] = [
     description: ''
   },
   {
-    id: 1,
     category: 'Web App',
     image: '/images/CoinsApp.webp',
     title: 'Coins App',
@@ -24,7 +27,6 @@ export const PROJECTS: IProjects[] = [
     description: ''
   },
   {
-    id: 2,
     category: 'Websites',
     image: '/images/ForeignPay.webp',
     title: 'Foreign Pay',
@@ -33,7 +35,6 @@ export const PROJECTS: IProjects[] = [
     description: ''
   },
   {
-    id: 3,
     category: 'Tilda',
     image: '/images/FROSTFIT.webp',
     title: 'Frostfit',
@@ -41,17 +42,15 @@ export const PROJECTS: IProjects[] = [
     link: '',
     description: ''
   },
-  // {
-  //   id: 4,
-  //   category: 'Tilda',
-  //   image: '/images/CosmoDom.webp',
-  //   title: 'CosmoDom',
-  //   tagline: 'Capsule houses for glamping and recreation centers',
-  //   link: 'https://cosmo-dom.com',
-  //   description: ''
-  // },
   {
-    id: 5,
+    category: 'Tilda',
+    image: '/images/CosmoDom.webp',
+    title: 'CosmoDom',
+    tagline: 'Capsule houses for glamping and recreation centers',
+    link: 'https://cosmo-dom.com',
+    description: ''
+  },
+  {
     category: 'Tilda',
     image: '/images/GreenHouse.webp',
     title: 'Green House',
@@ -60,7 +59,6 @@ export const PROJECTS: IProjects[] = [
     description: ''
   },
   {
-    id: 6,
     category: 'Tilda',
     image: '/images/UgcStudio.webp',
     title: 'UGC Studio',
@@ -69,7 +67,6 @@ export const PROJECTS: IProjects[] = [
     description: ''
   },
   {
-    id: 7,
     category: 'Tilda',
     image: '/images/KateKrasnova.webp',
     title: 'Kate Krasnova',
@@ -78,7 +75,6 @@ export const PROJECTS: IProjects[] = [
     description: ''
   },
   {
-    id: 8,
     category: 'Web App',
     image: '/images/MebelShara.webp',
     title: 'Mebel Shara',
@@ -87,7 +83,6 @@ export const PROJECTS: IProjects[] = [
     description: ''
   },
   {
-    id: 9,
     category: 'Web App',
     image: '/images/Kalimera.webp',
     title: 'Kalimera',
@@ -96,7 +91,6 @@ export const PROJECTS: IProjects[] = [
     description: 'Cyprus Airports VIP Fast Track Arrivals'
   },
   {
-    id: 10,
     category: 'Websites',
     image: '/images/TopEducation.webp',
     title: 'Top Education',
@@ -105,7 +99,6 @@ export const PROJECTS: IProjects[] = [
     description: ''
   },
   {
-    id: 11,
     category: 'Tilda',
     image: '/images/MajorContractor.webp',
     title: 'Major Construction',
@@ -114,7 +107,6 @@ export const PROJECTS: IProjects[] = [
     description: 'Glendale home and kitchen remodeling contractor'
   },
   {
-    id: 12,
     category: 'Tilda',
     image: '/images/NeuroUp.webp',
     title: 'Anna Voznaya | Neuro Up',
@@ -123,7 +115,6 @@ export const PROJECTS: IProjects[] = [
     description: ''
   },
   {
-    id: 13,
     category: 'Web App',
     image: '/images/IAiming.webp',
     title: 'Intelligent Aiming',
@@ -132,7 +123,6 @@ export const PROJECTS: IProjects[] = [
     description: ''
   },
   {
-    id: 14,
     category: 'Tilda',
     image: '/images/YogaRetrit.webp',
     title: 'Yoga Retrit',
@@ -141,7 +131,6 @@ export const PROJECTS: IProjects[] = [
     description: ''
   },
   {
-    id: 16,
     category: 'Tilda',
     image: '/images/EpoxyCoating.webp',
     title: 'Epoxy Coating',
@@ -150,7 +139,6 @@ export const PROJECTS: IProjects[] = [
     description: ''
   },
   {
-    id: 17,
     category: 'Websites',
     image: '/images/AMGElevator.webp',
     title: 'Amg Elevator',
@@ -159,7 +147,6 @@ export const PROJECTS: IProjects[] = [
     description: ''
   },
   {
-    id: 18,
     category: 'Websites',
     image: '/images/WeWorkTogether.webp',
     title: 'We Work Together',
@@ -168,7 +155,6 @@ export const PROJECTS: IProjects[] = [
     description: ''
   },
   {
-    id: 19,
     category: 'Tilda',
     image: '/images/capsulux.webp',
     title: 'CapsuLux',
@@ -177,28 +163,57 @@ export const PROJECTS: IProjects[] = [
     description: ''
   },
   {
-    id: 20,
     category: 'Tilda',
     image: '/images/Photolab.webp',
     title: 'Photolab',
     tagline: 'Become a Catalyst for Change in the World',
-    link: 'http://project12143711.tilda.ws',
+    link: 'https://becomeamonk.org',
     description: ''
   },
   {
-    id: 21,
     category: 'Tilda',
     image: '/images/anneconelly.webp',
     title: 'ANNE CONNELLY',
     tagline: 'Technologist & Speaker (Portfolio website)',
     link: 'https://project12744971.tilda.ws',
     description: ''
-  }
-]
-
-export const REVIEWS: IReviews[] = [
+  },
   {
-    id: 1,
+    category: 'Tilda',
+    image: '/images/gnolidze.webp',
+    title: 'Iurii Gnolidze',
+    tagline: 'Entrepreneur in the UK (Portfolio website)',
+    link: 'https://gnolidze.com',
+    description: ''
+  },
+  {
+    category: 'Tilda',
+    image: '/images/ivgproperty.webp',
+    title: 'IVG Property',
+    tagline: 'Social Housing investments',
+    link: 'https://ivgproperty.co.uk',
+    description: ''
+  },
+  {
+    category: 'Tilda',
+    image: '/images/codingShucrat.webp',
+    title: 'DarStop Coding',
+    tagline: 'Unlock Your Child’s Creativity with Coding',
+    link: 'https://landing.darstop.com/coding-for-kids',
+    description: ''
+  },
+  {
+    category: 'Web App',
+    image: '/images/SaidaConsulting.webp',
+    title: 'Saida Consulting',
+    tagline: 'A Student-run Pro Bono Consultancy at WHU',
+    link: 'https://saidia-consulting.de/home',
+    description: ''
+  }
+].map((item) => ({ ...item, id: uuidv4() }))
+
+export const REVIEWS: IReview[] = [
+  {
     name: 'Shukhrat T.',
     location: 'USA, Washington',
     rating: '5.0',
@@ -207,7 +222,6 @@ export const REVIEWS: IReviews[] = [
     platform: 'Fiverr'
   },
   {
-    id: 2,
     name: 'Palata M.',
     location: 'Germany, Berlin',
     rating: '5.0',
@@ -216,7 +230,6 @@ export const REVIEWS: IReviews[] = [
     platform: 'Fiverr'
   },
   {
-    id: 3,
     name: 'Aleko S.',
     location: 'Ukraine, Odessa',
     rating: '5.0',
@@ -225,7 +238,6 @@ export const REVIEWS: IReviews[] = [
     platform: 'Upwork'
   },
   {
-    id: 4,
     name: 'Maetreya N.',
     location: 'Sweden, Stockholm',
     rating: '5.0',
@@ -234,7 +246,14 @@ export const REVIEWS: IReviews[] = [
     platform: 'Fiverr'
   },
   {
-    id: 5,
+    name: 'Anna C.',
+    location: 'Canada, Toronto',
+    rating: '5.0',
+    review:
+      'This is the second time I worked with David and I was very pleased with the website he built for me on Tilda. He was responsive, made all the edits I requested after and was quick to communicate. I would certainly use his services again.',
+    platform: 'Fiverr'
+  },
+  {
     name: 'Moses L.',
     location: 'Germany, Dublin',
     rating: '5.0',
@@ -242,7 +261,6 @@ export const REVIEWS: IReviews[] = [
     platform: 'Fiverr'
   },
   {
-    id: 6,
     name: 'Kirill S.',
     location: 'Finland, Helsinki',
     rating: '5.0',
@@ -250,7 +268,6 @@ export const REVIEWS: IReviews[] = [
     platform: 'Fiverr'
   },
   {
-    id: 7,
     name: 'Anastasia G.',
     location: 'United Kingdom, Manchester',
     rating: '5.0',
@@ -258,7 +275,6 @@ export const REVIEWS: IReviews[] = [
     platform: 'Fiverr'
   },
   {
-    id: 8,
     name: 'Mozgmb H.',
     location: 'Slovakia, Poprad',
     rating: '5.0',
@@ -266,7 +282,6 @@ export const REVIEWS: IReviews[] = [
     platform: 'Fiverr'
   },
   {
-    id: 9,
     name: 'Anna C.',
     location: 'Canada, Toronto',
     rating: '5.0',
@@ -275,7 +290,6 @@ export const REVIEWS: IReviews[] = [
     platform: 'Fiverr'
   },
   {
-    id: 10,
     name: 'Anna V.',
     location: 'Portugal, Lisbon',
     rating: '5.0',
@@ -283,38 +297,41 @@ export const REVIEWS: IReviews[] = [
       'Excellent experience - expertise, speed, quality and communication! Highly recommend! Happy to work together more!',
     platform: 'Fiverr'
   }
-]
+].map((item) => ({ ...item, id: uuidv4() }))
 
-export const NAV_ITEMS: INavItems[] = [
+export const NAV_ITEMS: INavItem[] = [
   {
-    id: 'home',
-    href: '/main',
+    id: 'main',
+    href: APP_NAVIGATION.MAIN,
     label: 'Home',
-    Icon: HomeIcon
+    // @ts-ignore
+    Icon: Icons.Home
   },
   {
     id: 'projects',
-    href: '/projects',
+    href: APP_NAVIGATION.PROJECTS,
     label: 'Projects',
-    Icon: ProjectsIcon
+    // @ts-ignore
+    Icon: Icons.Projects
   },
   // {
   //   id: 'about',
-  //   href: '/about',
+  //   href: APP_NAVIGATION.ABOUT,
   //   label: 'About us',
-  //   Icon: AboutUsIcon
+  //   Icon: Icons.AboutUs
   // },
   {
     id: 'reviews',
-    href: '/reviews',
+    href: APP_NAVIGATION.REVIEWS,
     label: 'Reviews',
-    Icon: AboutUsIcon
+    // @ts-ignore
+    Icon: Icons.Reviews
   }
   // {
   //   id: 'contact',
-  //   href: '/contact',
+  //   href: APP_NAVIGATION.CONTACT,
   //   label: 'Contact us',
-  //   Icon: ContactIcon
+  //   Icon: Icons.Contact
   // }
 ]
 
@@ -342,56 +359,5 @@ export const ACHIEVEMENTS_DATA = [
     Icon: IconBrandUpwork,
     value: '100% JSS',
     description: '10+ successful projects'
-  }
-]
-
-export const FAVORITE_PROJECTS: IProjects[] = [
-  {
-    id: 0,
-    category: 'Tilda',
-    image: '/images/Tinsele.webp',
-    title: 'Tinsele',
-    tagline: 'Tinsele is the ultimate Web3 hub for movie studios and fans',
-    link: 'https://tinsele.io',
-    description: ''
-  },
-  {
-    id: 1,
-    category: 'Web App',
-    image: '/images/CoinsApp.webp',
-    title: 'Coins App',
-    tagline: 'Web App for tracking your cryptocurrency portfolio',
-    link: 'https://t.me/coinshouse_bot',
-    description: ''
-  }
-]
-
-export const FAVORITE_REVIEWS: IReviews[] = [
-  {
-    id: 1,
-    name: 'Shukhrat T.',
-    location: 'USA, Washington',
-    rating: '5.0',
-    review:
-      'David Grikurov was simply EXCEPTIONAL in developing our website. His professionalism in work, proactive communication, deep understanding, and high level of cooperation made the process smooth and enjoyable! Highly recommend 👏',
-    platform: 'Fiverr'
-  },
-  {
-    id: 2,
-    name: 'Palata M.',
-    location: 'Germany, Berlin',
-    rating: '5.0',
-    review:
-      'David absolutely nailed our website development project! 🙌 His code expertise ensured a bug-free delivery that exceeded all expectations. Working with him was a breeze, thanks to his swift responsiveness and great cooperation. Highly recommended!',
-    platform: 'Fiverr'
-  },
-  {
-    id: 3,
-    name: 'Aleko S.',
-    location: 'Ukraine, Odessa',
-    rating: '5.0',
-    review:
-      "David did an excellent job developing my cryptocurrency app. He was professional, communicated well, and delivered everything on time. The app runs smoothly, and I'm very happy with the result. Highly recommend and would work with him again.",
-    platform: 'Upwork'
   }
 ]
