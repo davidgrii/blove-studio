@@ -3,7 +3,8 @@
 import {
   IconQuoteFilled,
   IconReload,
-  IconStarFilled
+  IconStarFilled,
+  IconStarHalfFilled
 } from '@tabler/icons-react'
 import React from 'react'
 
@@ -52,11 +53,40 @@ export const Reviews: React.FC<IProps> = () => {
 
                   <div className={'flex gap-0.5 mt-2'}>
                     <span className={'mr-1'}>{rating}</span>
-                    <IconStarFilled className={'text-[#df7606]'} width={18} />
-                    <IconStarFilled className={'text-[#df7606]'} width={18} />
-                    <IconStarFilled className={'text-[#df7606]'} width={18} />
-                    <IconStarFilled className={'text-[#df7606]'} width={18} />
-                    <IconStarFilled className={'text-[#df7606]'} width={18} />
+                    {Number(rating) >= 4.6 ? (
+                      new Array(5)
+                        .fill(null)
+                        .map((_, i) => (
+                          <IconStarFilled
+                            key={i}
+                            className={'text-[#df7606]'}
+                            width={18}
+                          />
+                        ))
+                    ) : (
+                      <>
+                        <IconStarFilled
+                          className={'text-[#df7606]'}
+                          width={18}
+                        />
+                        <IconStarFilled
+                          className={'text-[#df7606]'}
+                          width={18}
+                        />
+                        <IconStarFilled
+                          className={'text-[#df7606]'}
+                          width={18}
+                        />
+                        <IconStarFilled
+                          className={'text-[#df7606]'}
+                          width={18}
+                        />
+                        <IconStarHalfFilled
+                          className={'text-[#df7606]'}
+                          width={18}
+                        />
+                      </>
+                    )}
                   </div>
                 </div>
 

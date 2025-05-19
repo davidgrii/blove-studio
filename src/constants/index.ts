@@ -296,6 +296,14 @@ export const REVIEWS: IReview[] = [
     review:
       'Excellent experience - expertise, speed, quality and communication! Highly recommend! Happy to work together more!',
     platform: 'Fiverr'
+  },
+  {
+    name: 'Ferdinand D.',
+    location: 'Germany, Dublin',
+    rating: '4.5',
+    review:
+      'David is an excellent developer. I would definitely recommend him for all kind of frontend development work :)',
+    platform: 'Upwork'
   }
 ].map((item) => ({ ...item, id: uuidv4() }))
 
